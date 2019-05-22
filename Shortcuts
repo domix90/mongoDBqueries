@@ -1,3 +1,7 @@
+----------------------------------------
+Find records in past X days 
+----------------------------------------
+
 db.getCollection('colname').find({"createdAt": 
          { 
         // (7 * 24 * 60 * 60 * 1000) is 2 days of millis
