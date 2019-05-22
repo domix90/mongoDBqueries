@@ -1,0 +1,5 @@
+db.getCollection('colname').find({"createdAt": 
+         { 
+        // (7 * 24 * 60 * 60 * 1000) is 2 days of millis
+           $gte: new Date((new Date().getTime() - (2 * 24 * 60 * 60 * 1000))) 
+        }})
