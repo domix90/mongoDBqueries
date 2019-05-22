@@ -12,3 +12,18 @@ Sort records by the newest?:
 ----------------------------------------
 
 db.getCollection('colname').find().sort({"CreatedAt": -1})
+
+----------------------------------------
+Find unique values in the database for one specific item/key: 
+----------------------------------------
+
+db.getCollection('colname').distinct("CreatedAt")
+
+Example : 
+
+/* 1 */
+[
+    ISODate("2019-05-17T15:17:45.268Z"),
+    ISODate("2019-05-17T15:21:50.601Z"),
+    ISODate("2019-05-20T07:35:25.727Z")
+]
